@@ -103,3 +103,11 @@ function getUserByEmail(email) {
 let userEmails = ['shereeanthony@kog.com', 'elmahead@omatom.com']
 let users = userEmails.map(email => getUserByEmail(email))
 console.log(users)
+
+function getUsersInAgeRange(min, max) {
+    return chuVaki.filter(user => user.age >= min && user.age <= max)
+}
+let minAge = 25
+let maxAge = 35
+let usersInRange = getUsersInAgeRange(minAge, maxAge)
+console.log(usersInRange)
