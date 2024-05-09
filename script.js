@@ -118,3 +118,10 @@ function getUsersBalance(){
 let usersBalance = getUsersBalance()
 console.log(usersBalance)
 
+function getUserFriend(friends){
+    return chuVaki.filter(user => user.friends.includes(friends))
+}
+let friends = 'Briana Decker'
+let userFriends = getUserFriend(friends)
+console.log(userFriends)
+
