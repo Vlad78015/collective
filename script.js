@@ -112,11 +112,15 @@ let maxAge = 35
 let usersInRange = getUsersInAgeRange(minAge, maxAge)
 console.log(usersInRange)
 
-function getUsersBalance(){
-    return chuVaki.map(user => user.balance)
+function getUsersBalanceTotal() {
+    let totalBalance = 0
+    chuVaki.forEach(user => {
+        totalBalance += user.balance
+    })
+    return totalBalance
 }
-let usersBalance = getUsersBalance()
-console.log(usersBalance)
+let usersBalanceTotal = getUsersBalanceTotal()
+console.log(usersBalanceTotal)
 
 function getUserFriend(friends){
     return chuVaki.filter(user => user.friends.includes(friends))
