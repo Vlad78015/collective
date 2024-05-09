@@ -111,3 +111,10 @@ let minAge = 25
 let maxAge = 35
 let usersInRange = getUsersInAgeRange(minAge, maxAge)
 console.log(usersInRange)
+
+function getUsersBalance(){
+    return chuVaki.map(user => user.balance)
+}
+let usersBalance = getUsersBalance()
+console.log(usersBalance)
+
