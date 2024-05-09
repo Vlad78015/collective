@@ -95,5 +95,5 @@ console.log(chuvakiColor)
 let maleNames = chuVaki.filter(user => user.gender === 'male').map(user => user.name);
 console.log(maleNames)
 
-let offlineUsers = chuVaki.filter(user => user.isActive === 'false').map(user => user.name)
+let offlineUsers = chuVaki.filter(user => user.isActive === false).map(user => user.name)
 console.log(offlineUsers)
