@@ -85,7 +85,6 @@ let chuVaki = [
     },
     ];
 
-
 let chuvakiName = chuVaki.map(chuvak => chuvak.name)
 console.log(chuvakiName)
 
@@ -97,3 +96,10 @@ console.log(maleNames)
 
 let offlineUsers = chuVaki.filter(user => user.isActive === false).map(user => user.name)
 console.log(offlineUsers)
+
+function getUserByEmail(email) {
+    return chuVaki.find(user => user.email === email)
+}
+let userEmails = ['shereeanthony@kog.com', 'elmahead@omatom.com']
+let users = userEmails.map(email => getUserByEmail(email))
+console.log(users)
